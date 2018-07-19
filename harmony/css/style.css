@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -96,6 +97,7 @@ body {
     font-weight: 400;
     line-height: 130%;
     letter-spacing: 0.2rem;
+    animation: moveInLeft 1s ease-out; 
 }
 
 .heading-sub {
@@ -103,6 +105,7 @@ body {
     color: #add2ff;
     letter-spacing: 0.05rem;
     margin: 1.5rem 0 3rem 0;
+    animation: moveInRight 1s ease-out; 
 }
 
 .btn:link,
@@ -137,7 +140,6 @@ body {
     background-color: #fdfaee;
     color:#0d87d3;
     /* color: #1158af; */
-    
 }
 
 .btn-outline {
@@ -150,6 +152,41 @@ body {
     /* color: #1158af; */
 }
 
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; 
+}
+
 #particles-js {
     overflow: hidden;
+}
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem); }
+    80% {
+      transform: translateX(1rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } 
+}
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem); }
+    80% {
+      transform: translateX(-1rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } 
+}
+      
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } 
 }
