@@ -17,9 +17,9 @@ body {
 .header {
     height: 100vh;
     background-image: linear-gradient(
-        to right bottom,
-        cornflowerblue,
-        #042552),
+        to bottom,
+        #1895e3,
+        #3c6ac0),
         url()  ;
     background-size: cover;
     background-position : top;
@@ -50,7 +50,8 @@ body {
     padding-top: 1.5rem;
     list-style: none;
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .nav__menu li {
@@ -85,7 +86,7 @@ body {
     transform: translate(-50%,-35%);
     width: fit-content;
     padding: 2rem;
-    /* background-color: rgba(100, 148, 237, 0.5); */
+    /* background-color: ; */
     margin: auto;
 }
 
@@ -117,13 +118,14 @@ body {
     border-radius: 0.2rem;
     display: inline-block;
     min-width: 250px;
-    transition: transform .2s;
+    transition: transform .3s;
     backface-visibility: hidden; 
 }
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    background-color: #fdfaee;
 }
 
 .btn:active {
@@ -132,8 +134,10 @@ body {
 }
 
 .btn-white {
-    background-color: #fff9e3;
-    color: #1158af;
+    background-color: #fdfaee;
+    color:#0d87d3;
+    /* color: #1158af; */
+    
 }
 
 .btn-outline {
@@ -142,8 +146,8 @@ body {
 }
 
 .btn-outline:hover {
-    background-color: #fff9e3;
-    color: #1158af;
+    color:#0d87d3;
+    /* color: #1158af; */
 }
 
 #particles-js {
