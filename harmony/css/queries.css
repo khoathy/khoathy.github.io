@@ -1,0 +1,50 @@
+
+/* Tablet Landscape max-width: 1200px */
+@media only screen and (max-width: 75em) {
+    
+} 
+
+
+/* Tablet Portrait max-width: 900px  1rem = 9px*/
+@media only screen and (max-width: 56.25em) {
+    html {font-size: 56.25%;}
+}
+
+/*Small Phones max-width: 768px 1rem = 9px */
+@media only screen and (max-width: 48em) {
+    html {font-size: 50%;} 
+    .nav__logoBox {
+        display: block;
+        margin-right: 5rem;
+    }
+}
+
+
+/*Small Phones max-width: 600px 1rem = 8px*/
+@media only screen and (max-width: 37.5em) {
+    .heading-primary {
+        margin-top: 8rem;
+    }
+}
+    
+
+
+/*Small Phones max-width: 448px */
+@media only screen and (max-width: 28em) {
+    .heading-primary {
+        font-size: 3.5rem;
+        margin: 18rem 1.5rem 0 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .heading-sub {
+        margin: 1.2rem;
+        font-size: 2rem;
+        letter-spacing: 0.02rem;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        font-size: 1.6rem;
+        padding: 1.3rem 1.5rem;
+        min-width: 22rem;     
+}
