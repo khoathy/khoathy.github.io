@@ -1,6 +1,7 @@
 /* Tablet Landscape max-width: 1200px */
 @media only screen and (max-width: 75em) {
     .milestones__box {margin: 1.5rem 3rem 1.5rem 3rem;}
+    .warning__msg {max-width: 60%;}
 } 
 
 /* Tablet Portrait max-width: 900px  1rem = 9px*/
@@ -12,6 +13,13 @@
 /*Small Phones max-width: 768px 1rem = 9px */
 @media only screen and (max-width: 48em) {
     html {font-size: 50%;} 
+    .warning__msg {max-width: 80%;}
+    .warning__close {
+        font-size: 3rem;
+        position: absolute;
+        top : 0;
+        right: 1rem;
+    }
     .nav__logoBox {
         display: block;
         margin-right: 5rem;
@@ -44,16 +52,11 @@
     }
     .warning__msg {line-height: 2rem;}
     
-    .warning__close {
-        font-size: 3rem;
-        position: absolute;
-        top : 0;
-        right: 1rem;
-    }
 }
     
 /*Small Phones max-width: 480px */
 @media only screen and (max-width: 30em) {
+    .warning__msg {max-width: 85%;text-align: left;}
     .heading-primary {
         font-size: 3.6rem;
         margin: 10rem 1rem 1.5rem 1rem;

@@ -1,7 +1,7 @@
 /*
 COLORS:
 
-Dark blue: #2463b2 
+Dark blue: #3c6ac0
 Medium blue: #0d87d3
 Light blue: #1895e3
 
@@ -147,7 +147,7 @@ body {
 
 .warning__msg {
     margin: auto;
-    max-width: 80%;
+    max-width: 85%;
 }
 
 .warning__msg a {
@@ -423,5 +423,5 @@ footer {
     fill: currentColor;
 }
 
-.icon-small:hover {fill: #0d87d3;}
+.icon-small:hover {fill: #1895e3;}
 
