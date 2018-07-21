@@ -146,7 +146,7 @@ body {
 
 .warning__msg {
     margin: auto;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .warning__msg a {
@@ -158,8 +158,8 @@ body {
     text-decoration: none;
     font-size: 3rem;
     position: absolute;
-    top : 0;
-    right: 5rem;
+    top : -0.8rem;
+    right: 4rem;
 }
 
 .nav {

@@ -37,10 +37,8 @@
         font-weight: 400;
         margin-bottom: 3rem;
     }
-    .warning__msg {
-        max-width: 80%;
-        line-height: 2rem;
-    }
+    .warning__msg {line-height: 2rem;}
+    
     .warning__close {
         font-size: 3rem;
         position: absolute;
