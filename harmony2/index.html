@@ -12,8 +12,16 @@
     </head>
     <body>
         <header class="header" id="particles-js">
-            <div class="warning">
-                <p><span class = "warning_msg">WARNING </span>: There is no fundraising or whitelisting process at this time. <br> Do not reply to anyone contacting you for an allocation. Anyone that tells you otherwise is a scammer.&nbsp <a href="">LEARN MORE</a> </p>  
+            <div class="warning" id="warning">
+                <p class="warning__msg">
+                    <span class = "bold">WARNING </span>: There is no fundraising or whitelisting process at this time. 
+                    Do not reply to anyone contacting you for an allocation. 
+                    Anyone that tells you otherwise is a scammer.&nbsp; 
+                    <a href="">LEARN MORE</a> 
+                </p>  
+                <a href = "#warning" class = "warning__close">
+                    <svg class="close__icon icon-small"><use xlink:href="img/solid.svg#times"></use></svg>
+                </a>
             </div>
             <nav class="nav">
                 <div class="nav__logoBox">

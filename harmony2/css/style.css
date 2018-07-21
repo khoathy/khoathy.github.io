@@ -102,6 +102,9 @@ body {
 /* UTILITY CLASS */
 /*-------------------------*/
 
+.bold {
+    font-weight: 600;
+}
 .u-center-text {
     text-align: center !important; }
 
@@ -133,7 +136,6 @@ body {
         url()  ;
     /* background-size: cover;
     background-position : top; */
-    position: relative;
 }
 
 .warning {
@@ -143,15 +145,30 @@ body {
     color: #ff6d2e;
     padding: 0.5rem;
     font-weight: 400;
+    position: relative;
+    box-shadow: 0 0.8rem 1.6rem rgba(0,0,0,0.2);
 }
 
-.warning_msg{
-    font-weight: 600;
+.warning:target {
+    display: none;
 }
-.warning p a{
+
+.warning__msg {
+    margin: auto;
+    max-width: 70%; 
+}
+
+.warning__msg a {
     color: inherit;
-    font-weight: 600;
 }
+
+.warning__close {
+    color: inherit;
+    position: absolute;
+    top : 1rem;
+    right: 3rem;
+}
+
 .nav {
     max-width: 1200px;
     margin: auto;
