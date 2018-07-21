@@ -1,9 +1,18 @@
 /*
 COLORS:
 
+Light blue: #2463b2 
+Medium blue: #002859
+Dark blue: #042552
+Cream: #fff8de
+
+
+
 Dark blue: #2463b2 
 Medium blue: #0d87d3
 Light blue: #1895e3
+Cream: #fefcf8
+Light Gray: #
 
 */
 
@@ -177,7 +186,7 @@ body {
 }
 
 /* .nav__logo {
-   
+    height: 3rem;
 } */
 
 .logo {
@@ -228,6 +237,8 @@ body {
     left: 50%;
     transform: translate(-50%,-32%);
     width: fit-content;
+    /* padding: 3.2rem; */
+    /* background-color: ; */
 }
 
 .btn:link,
@@ -261,6 +272,7 @@ body {
 .btn-white {
     background-color: #fefcf8;
     color:#0d87d3;
+    /* color: #1158af; */
 }
 
 .btn-outline {
@@ -270,6 +282,7 @@ body {
 
 .btn-outline:hover {
     color:#0d87d3;
+    /* color: #1158af; */
 }
 
 .btn-animated {

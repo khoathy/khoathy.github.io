@@ -1,7 +1,22 @@
-{
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+/* Otherwise just put the config content (json): */
+
+particlesJS('particles-js',
+  
+  {
   "particles": {
     "number": {
-      "value": 66,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 473.4885849793636
@@ -26,7 +41,7 @@
       }
     },
     "opacity": {
-      "value": 0.25654592973848367,
+      "value": 0.1,
       "random": false,
       "anim": {
         "enable": false,
@@ -36,7 +51,7 @@
       }
     },
     "size": {
-      "value": 5,
+      "value": 7,
       "random": false,
       "anim": {
         "enable": false,
@@ -49,12 +64,12 @@
       "enable": true,
       "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.3,
+      "opacity": 0.15,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 1,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -71,7 +86,7 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
@@ -108,3 +123,5 @@
   },
   "retina_detect": true
 }
+
+);
