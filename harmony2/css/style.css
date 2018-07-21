@@ -65,11 +65,12 @@ body {
     letter-spacing: .15rem;
     margin-bottom: 2rem;
     transition: all .2s; 
+    
 }
 
-    .heading-secondary:hover {
-        transform: scale(1.05);
-        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+.heading-secondary:hover {
+    transform: scale(1.05);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
     font-size: 2.5rem;
@@ -321,7 +322,12 @@ body {
 
 .section-milestones {
     background-color: #fff;
-    padding: 4rem 5rem 3rem 5rem;
+    padding: 5rem 5rem 3rem 5rem;
+}
+
+.section-milestones__heading{
+    display: flex;
+    justify-content: center;
 }
 
 .milestones__row {
