@@ -7,14 +7,49 @@
         <link href="https://fonts.googleapis.com/css?family=Overlock+SC" rel="stylesheet">
         <meta name="theme-color" content="#ffffff">
         <title>My porfolio</title>
+
+        <style>
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 2;
+                padding: 3rem;
+            }
+            ul {
+                list-style: none;
+            }
+
+            li {margin-bottom: 10px;}
+            
+            a:link,
+            a:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding-left: 10px;
+                color: #999;
+                border-left: solid 10px transparent;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a:hover,
+            a:active {
+                color:rgb(179, 131, 237);
+                border-left: solid 10px rgb(179, 131, 237);
+            }
+        </style>
     </head>
     <body>
-      <a href="restaurant/index.html">Mint &amp; Basil</a>
-      <br>
-      <a href="harmony/index.html">Harmony</a>
-      <br>
-      <a href="harmony2/index.html">Harmony2</a>
-      <br>
-      <a href="harmony3/index.html">Harmony2</a>
+      <ul>
+          <li><a href="restaurant/index.html">Mint &amp; Basil</a></li>
+          <li><a href="harmony/index.html">Harmony</a></li>
+          <li><a href="lavender-boutique/index.html">Lavender Boutique</a></li>
+      </ul>
     </body>
 </html>
