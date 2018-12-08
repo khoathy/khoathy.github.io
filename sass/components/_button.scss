@@ -1,0 +1,66 @@
+
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.6rem 0.8rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+        box-shadow: 0 2px 2px rgba($color-gray,.1);
+        background: $color-white;
+        cursor: pointer;    
+        
+    }
+  
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow:  0 5px 2px rgba($color-gray,.1);
+    }
+    
+    &:active,
+    &:focus {
+        transform: translateY(-1px);
+        box-shadow:  0 3px 2px rgba($color-gray,.1);
+    }
+
+}
+
+
+.btn-on-note {
+    padding: 0.5rem;
+    box-shadow:  0 -0.3rem 0 rgba($color-purple-light,1) inset;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+       box-shadow:  0 -5rem 0 rgba($color-purple-light,0.5) inset;
+    } 
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color: $color-purple;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-purple;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-purple;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-gray, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-gray, .15);
+        transform: translateY(0);
+    }
+}

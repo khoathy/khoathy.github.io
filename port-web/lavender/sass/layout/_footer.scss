@@ -1,0 +1,66 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    padding: 4rem;
+    padding-top: 10rem;
+    background-color: $color-primary-dark;
+    color: $color-gray-med;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @include respond(phone) {
+        padding: 8rem 3rem; 
+    }
+
+    &__help,
+    &__social {
+        padding-right: 3rem;
+
+        ul {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $color-gray-med;
+                font-weight: 300;
+                &:hover {
+                    color: $color-highlight;
+                }
+            }
+        }
+    }
+    &__signup {
+        text-align: center;
+        .btn {
+            margin: 1.5rem auto;
+        }
+        p {
+            width: 60%;
+            margin: 0 auto;
+            @include respond(tab-port) {
+                width: 100% !important;   
+            }
+        }
+    }
+
+    &__logo {
+        height: 5rem;
+        opacity: 0.6;
+        margin: 1rem auto;
+        display: block;    
+    }
+    &__copyright {
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        
+    }
+    &__portfolio-link {
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+}

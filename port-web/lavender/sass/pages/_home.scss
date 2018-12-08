@@ -1,0 +1,69 @@
+.section-about, 
+.section-new,
+.section-best,
+.section-collections {
+    position: relative;
+    padding: 8rem 20rem;
+    @include respond(tab-land) {
+        padding: 8rem 15rem;
+    }
+    @include respond(tab-port) {
+        padding: 8rem 10rem;
+    }
+    @include respond(phone) {
+        padding: 6rem 4rem;
+    }
+
+    .row {
+        position: relative;
+    }
+    .btn {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 1.6rem;
+    }
+}
+
+
+.section-about {
+    padding-bottom: 2rem;
+
+    &__heading{
+        
+        h2 {
+            display: inline-block;
+            position: absolute;
+            top: 0rem;
+            left: 0;      
+        }
+    }
+
+    .btn {
+        z-index: 1;
+    }
+    
+    
+}
+
+
+.decor-left {
+    width: 9vw;
+    position: absolute;
+    bottom: -10rem;
+    left: -3.5rem;
+    transform-origin: 10% 90%;
+    transition: all 0.5s ease-out;
+    @include respond(tab-land){bottom: -15rem;}
+}
+.decor-right {
+    width: 9vw;
+    position: absolute;
+    bottom: -30rem;
+    right: -2rem;
+    transform-origin: 80% 90%;
+    @include respond(tab-land){bottom: -15rem;}
+}
+.section-collections {
+    padding-bottom: 15rem;
+}

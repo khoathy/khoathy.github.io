@@ -1,0 +1,36 @@
+//name
+.stroke {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    -webkit-animation: write 0.6s ease-in 0.3s forwards;
+            animation: write 0.6s ease-in 0.3s forwards;
+}
+
+.stroke-1 {
+    -webkit-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+}
+.stroke-2 {
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s;
+}
+.stroke-3 {
+    -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+}
+
+@-webkit-keyframes write {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes write {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+

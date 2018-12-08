@@ -1,0 +1,141 @@
+.nav {
+    position: relative;
+    z-index: 15;
+    width : 100%;
+
+    &__list {
+        position: absolute;
+        top: 2.5rem;
+        right: 4rem;
+        z-index: 15;
+
+        @include respond(tab-port){
+            visibility: hidden;
+            opacity: 0;
+            top: 7.5rem;
+            right: 3rem;
+            background-color: $color-white;
+            border-radius : 3px;
+            padding : 3.5rem 2.5rem;
+            box-shadow: 0px 2px 0.5rem rgba($color-black, 0.1);
+            transition: all 0.1s 0.1s ease-in;
+        }
+    }
+    &__overlay {
+        @include respond(tab-port){
+            width : 4.5rem;
+            height: 4.5rem;
+            position : absolute;
+            top: 2rem;
+            right: 3rem;
+            border-radius: 50%;
+            background: rgba($color-black, 0.2);
+            transition: all 0.3s cubic-bezier(0.87, 0, 0.08, 1);
+            &-scale {
+                transform: scale(87);
+            }
+        }
+
+    }
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+        margin-right: 3.2rem;
+
+        @include respond(tab-port){
+            display: block;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+                margin-right: 0;
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-blue-med-2;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        transition: box-shadow 0.2s ease-in-out;
+
+        padding: 2px 0.5rem 2px 0.5rem;
+
+        @include respond(tab-port){
+            padding : 2px 0 2px 1.5rem;
+            border-left : 3px solid transparent;
+            color: $color-blue-med-1;
+        }
+
+        &:hover {
+            box-shadow: 0 -2.5rem 0 $color-white-2 inset;
+            @include respond(tab-port){
+                box-shadow: none;
+                border-left : 3px solid $color-purple-light;
+            }
+        }
+        
+        &--active {
+            color: $color-white;
+            font-weight: 400;
+            @include respond(tab-port){
+                color: $color-blue-med-2;
+            }
+            &:hover {
+                box-shadow: none;
+                color: $color-white-2;
+                @include respond(tab-port){
+                    color: $color-blue-med-1;
+                }
+            }
+            &-dark {
+                color: $color-blue-med-2;
+                &:hover {
+                    color: $color-blue-med-1;
+                    box-shadow: 0 -2.5rem 0 $color-white inset;
+                }
+            }
+        }
+            
+        
+    }
+
+    &__icon-menu {
+        display: none;
+        width : 4.5rem;
+        height: 4.5rem;
+        position : absolute;
+        z-index: 15;
+        top: 2rem;
+        right: 3rem;
+        border-radius: 50%;
+        background-color: $color-white;
+        padding: 0.8rem;
+        box-shadow: 1px 1px 1px rgba(128, 119, 154, 0.2);
+        @include respond(tab-port){
+            display: block;
+        }
+
+        .menu-bar {
+            fill : $color-blue-med-1;
+            width : 1.7rem;
+            height: 2px;
+            &:last-child {
+                width: 1.2rem;
+            }
+        }
+
+        &:hover,
+        &:active {
+            cursor: pointer;
+            .menu-bar-1 { animation: icon-menu 600ms ease-in-out; }
+            .menu-bar-2 { animation: icon-menu 600ms 100ms ease-in-out; }
+            .menu-bar-3 { animation: icon-menu-2 600ms 200ms ease-in-out; }
+        
+        }
+    }
+
+}
+.visible {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,94 @@
+
+.artwork {
+    margin: 0 auto; 
+    padding: 12rem 0 6rem 0;
+    background-color: $color-blue-light;
+    
+
+    &__heading {
+        text-align: center;
+        color: $color-gray;
+        &-drawing {
+            color: $color-blue-med-2;
+        }
+    }
+    &__intro, 
+    &__gallery  {
+        margin: 0 auto; 
+        padding: 4rem 0;
+        width: 80vw;
+
+        @include respond(tab-port){
+            width: 90vw;
+        }
+    }
+    &__item {
+        padding-bottom: 6rem;
+        margin: 4rem 0 12rem 0;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 1px 2px 1rem rgba($color-gray,0.2);
+
+        @include respond(tab-land){
+            margin: 2rem 0 8rem 0;
+            padding-bottom: 5rem;
+        }
+
+        @include respond(phone){
+            margin: 2rem 0 6rem 0;
+            padding-bottom: 2.5rem;
+        }
+
+        &-number{
+            text-align: right;
+            margin-right: 2rem;
+            font-size: 6rem;
+            color: $color-blue;
+        }
+        &-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 95%;
+            max-height: 100vh;
+        }
+
+        &-caption {
+           
+            width: 60%;
+            margin: 1rem auto;
+            padding-top: 2rem;
+            @include respond(tab-port){
+                width: 80%;
+            }
+            @include respond(phone-sm){
+                width: 90%;
+            }
+        }
+        &-title {
+            text-align: center;
+            margin: 0.5rem auto 2rem;
+            @include respond(tab-land){
+                margin: 0 auto 1.5rem;
+            }
+        }
+        &-description {
+            margin-top: 1rem;
+            
+        }
+        &-bonus {
+            margin: 3rem auto;
+        }
+       
+    }
+    &__link{
+        float: right;
+        margin-top: -4rem;
+        color: $color-purple;
+        @include respond(tab-land){
+            margin-top: -1rem;
+        }
+
+    }
+}
+           
+            

@@ -1,0 +1,382 @@
+
+
+
+
+.nav {
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        position: absolute;
+        top: 1rem;
+        right: 50%;
+        transform: translate(50%,0);
+        text-align: right;
+        padding: 1.5rem 2rem;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+
+        @include respond(tab-port){
+            opacity: 0;
+            visibility: hidden;
+            top: 5rem;
+            right: 26rem;
+            z-index: 9999;
+            background: rgba($color-white-2,0.95);
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 1px 2px 0.5rem rgba($color-gray,0.2);
+            transition: all 0.2s;
+
+        }
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__item {
+        list-style: none;
+        display: inline-block;
+
+        &:not(:last-child){ 
+            margin-right: 3rem;
+        }
+        @include respond(tab-port){
+            display: block;
+            text-align: left;
+            margin-left: 2rem;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $color-gray;
+        background-color: rgba($color-white,0.3);
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: $color-highlight;
+        }
+
+    }
+
+//left
+    &__left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+    }
+    &__logo {
+        height: 5rem;
+        margin: 1rem 2.5rem;
+        transition: all ease-in 0.2s;
+    }
+
+//right    
+
+    &__right {
+        position: fixed;
+        top: 1rem;
+        right: 3rem;
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin: 1.6rem 1.2rem;
+        width: 18px;
+        height: 18px;
+        transition: all 250ms ease;
+        display: inline-block;
+            
+        & svg {
+            width: 100%;
+            height: 100%;
+            stroke: $color-gray-med;
+            fill: $color-gray-med;
+            transition: 0.2s ease-in;
+        }     
+        
+        
+    }
+
+//sticky    
+    &__sticky {
+        position: fixed;
+        background-color: rgba($color-white,0.95);
+        box-shadow: 0 1px 0.1rem rgba(gray,0.2);
+        border-bottom-left-radius: 5px;
+    }  
+    &__sticky &__logo{
+        height: 5rem;
+        margin-top: 0;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+    }
+    &__sticky &__right,
+    &__sticky &__menu {
+        top: 0rem;
+    }  
+}
+
+
+.menu {
+    display: none;
+    position: relative;
+    width: 16px;
+    height: 12px;
+    margin-right: 1.5rem;
+    &-bar {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-gray-med;
+        border-radius: 2px;
+        overflow: hidden;
+        &:first-child {
+            top: 0;
+        }
+        &:nth-child(2){
+            top: 5px;
+            width: 80%;
+        }
+        &:nth-child(3){
+            top: 10px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: $color-highlight;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            z-index: 100;
+            transition: 0.3s;
+        }        
+    }
+
+    &:hover &-bar::after{
+        left: 0%;
+    }
+
+    &:hover &-bar:nth-child(2)::after{
+        transition-delay: 0.15s;
+    }
+    &:hover &-bar:nth-child(3)::after{
+        transition-delay: 0.3s;
+    }
+
+    @include respond(tab-port){
+        display: block;
+    }
+}
+
+
+
+
+
+.search__box,
+.cart__notification,
+.login__box {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 5rem;
+    right: 3rem;
+    z-index: 99999;
+    background: rgba($color-white-2,0.95);
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 2px 0.5rem rgba($color-gray,0.2);
+    transition: all 0.3s;
+}
+
+
+
+.search,
+.cart,
+.login {
+    &:hover &__svg {
+        fill: $color-highlight;
+    }
+}
+
+.search {
+    &__box {
+        padding: 2rem;
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+   
+    // &:hover &__box,
+    // &:active &__box {
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        min-width: 30rem;
+        height: 3.6rem;
+        font-size: 100%;
+        color: $color-primary;
+        background: none;
+        border: none;
+        border-bottom: solid 1px $color-primary-light;
+        
+        &::placeholder {
+            color: $color-gray-med;
+            font-weight: 100;
+            font-size: 90%;
+        }
+        &:focus {
+            outline: none;
+            border-bottom: solid 3px $color-primary-light;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: none;
+        margin-left: 0.5rem;
+        border: none;
+    }
+
+    &__icon:hover {fill: $color-highlight;}
+    
+    &:hover &__svg {
+        fill: $color-highlight;
+    }
+}
+
+.cart {
+    position: relative;
+    
+    &:hover &__svg ,
+    &:active &__svg {
+        fill: $color-highlight;
+        stroke: $color-highlight;
+    }
+    &:hover &__notification {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__notification {
+        padding: 1rem 2rem;
+        color: $color-gray;
+        font-size: 90%;
+    }
+    
+    &__number {
+        position: absolute;
+        top: -40%;
+        right: -55%;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80%;
+        font-weight: 400;
+        color: $color-primary;
+        background-color: rgba($color-primary-light,0.5);
+    }
+}
+
+.login {
+    // &:hover &__box,
+    // &:active &__box {
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+    
+
+    &__box {
+        padding: 2rem 2.5rem;
+   
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__item {
+        margin-bottom: 1rem;
+        & label,
+        & input {
+            display: block;
+            width: 100%;
+        }
+        & label {
+            font-size: 85%;
+            margin-bottom: 0.2rem;
+            
+        }
+        & input {
+            height: 2.4rem;
+            text-align: center;
+            font-size: 90%;
+            color: $color-primary;
+            border: none;
+            border-radius: 2px;
+            border-bottom: solid 1px $color-primary-light;
+            background: none;
+            margin-bottom: 2.4rem;
+            //-webkit-appearance: none;
+            &:-webkit-autofill {
+                -webkit-text-fill-color: $color-primary;
+                box-shadow: 0 0 0px 1000px $color-white-2 inset;
+            }
+            &:focus {
+                outline: none;
+                border-bottom: solid 3px $color-primary-light;
+            }
+        }
+    }
+    &__forgot {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 75%;
+        display: block;
+        text-align: right;
+        margin-top: -1.6rem;
+        margin-bottom: 2rem;
+    }
+    &__btn {
+        font-size: 1.4rem;
+        width: 100%;
+        padding: 1.2rem;
+    }
+    &__btn-outline {
+        padding: 0.5rem 1rem;
+        margin-top: 0.8rem;
+    }
+    &__link {
+        font-size: 85%;
+        text-decoration: none;
+        color: $color-primary;
+    }
+}

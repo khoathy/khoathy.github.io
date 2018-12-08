@@ -1,0 +1,110 @@
+@keyframes icon-menu {
+	0% { width: 1.8rem; }
+	20% { width: 0.2rem; }
+	80% { width: 2.1rem; }
+	100% { width: 1.8rem; }
+}
+
+@keyframes icon-menu-2 {
+	0% { width: 1.2rem; }
+	20% { width: 0.2rem; }
+	75% { width: 2.1rem; }
+	100% { width: 1.2rem; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+
+@keyframes enter-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(10%, 5%, 0);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes enter-left {
+    0% {
+        opacity: 0;
+        transform: translate3d(-10%, 5%, 0);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes enter-top {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,20%,0) ;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+}
+
+
+//slider uses transition - smooth 
+@keyframes slide {
+	0%,40% {
+		transform: translate(0,0);
+	}
+	50%,100% {
+		transform: translate(-50%,0);
+	}
+}
+
+@keyframes tick {
+	0% {
+	  	stroke-dashoffset: 26;
+	}
+	
+	100% {
+	  	stroke-dashoffset: 0;
+	}
+}
+
+//sticker
+@keyframes flutter {
+
+	0%,20%,100%{
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+    8% {
+		transform: matrix(1,0,-0.02,1,-2,0);
+	}
+  
+}
+
+//heart
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.25);
+    }
+    25% {
+        transform: scale(1.15);
+    }
+    35% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

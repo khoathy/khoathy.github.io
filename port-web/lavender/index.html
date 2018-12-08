@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Lavender Boutique</title>
+    </head>
+    <body>
+        <section class="content">
+            <nav class="nav">
+                <ul class="nav__menu nav__center">
+                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">New Arrivals</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Collections</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">SALE</a></li>
+                </ul>
+
+                <div class="nav__left">
+                    <a href ="#"><img src="img/logo.svg" alt="Lavender Boutique logo" class="nav__logo"></a>
+                </div>
+
+                <div class="nav__right">
+                    <div class="nav__icon menu">
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                    </div>
+                    <div class="nav__icon search">
+                        <svg class="search__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <path d="M89.207 94.156L65.452 70.402c-6.508 5.374-14.68 8.318-23.17 8.318-9.734 0-18.884-3.79-25.765-10.673C9.635 61.165 5.844 52.015 5.844 42.282S9.634 23.4 16.518 16.517c6.88-6.882 16.03-10.673 25.764-10.673s18.885 3.79 25.768 10.672c13.313 13.314 14.238 34.542 2.353 48.936l23.755 23.755-4.95 4.95zM42.28 12.844c-7.86 0-15.253 3.062-20.813 8.622-5.56 5.56-8.623 12.953-8.623 20.816s3.063 15.255 8.623 20.816c5.56 5.56 12.953 8.622 20.814 8.622 7.863 0 15.257-3.063 20.82-8.623 11.475-11.477 11.475-30.153 0-41.63-5.563-5.56-12.956-8.623-20.82-8.623z">
+                            </path>
+                        </svg>
+                        <div class="search__box" id="search__box">
+                            <form action="#" class="search__form">
+                                <input class="search__input" type="text" name="search" placeholder="What are you looking for?" value="" autocomplete="off">
+                                <button class="search__btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="search__icon">
+                                        <path d="M89.207 94.156L65.452 70.402c-6.508 5.374-14.68 8.318-23.17 8.318-9.734 0-18.884-3.79-25.765-10.673C9.635 61.165 5.844 52.015 5.844 42.282S9.634 23.4 16.518 16.517c6.88-6.882 16.03-10.673 25.764-10.673s18.885 3.79 25.768 10.672c13.313 13.314 14.238 34.542 2.353 48.936l23.755 23.755-4.95 4.95zM42.28 12.844c-7.86 0-15.253 3.062-20.813 8.622-5.56 5.56-8.623 12.953-8.623 20.816s3.063 15.255 8.623 20.816c5.56 5.56 12.953 8.622 20.814 8.622 7.863 0 15.257-3.063 20.82-8.623 11.475-11.477 11.475-30.153 0-41.63-5.563-5.56-12.956-8.623-20.82-8.623z"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="nav__icon login">
+                        <svg class="login__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path d="M39.532 27.33C42.254 25.126 44 21.764 44 18c0-6.617-5.383-12-12-12s-12 5.383-12 12c0 3.765 1.747 7.127 4.468 9.33C16.036 30.41 10 38.513 10 48v8c0 1.104.896 2 2 2s2-.896 2-2v-8c0-9.925 8.075-18 18-18s18 8.075 18 18v8c0 1.104.896 2 2 2s2-.896 2-2v-8c0-9.486-6.035-17.59-14.468-20.67zM24 18c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8-8-3.59-8-8z">
+                            </path>
+                        </svg>
+                        <div class="login__box">
+                            <div class="error text"><p></p></div>
+                            <form method="post" id="form__login">
+                                <div class="login__item">
+                                    <label>E-mail</label>
+                                    <input type="text" name="email" required="">
+                                </div>
+                                <div class="login__item">
+                                    <label>Password</label>
+                                    <input type="password" name="password" required="">
+                                    <a href="#" class="login__forgot">Forgot your password?</a>
+                                </div>
+                                <div class="login__item">
+                                    <button class="login__btn btn btn-full">Sign in</button>
+                                </div>
+                            </form>
+                            
+                            <div class="login__sign-up">
+                                 <a href="#" class="login__link">Don't have an account? &nbsp; → &nbsp; <span class = "login__btn-outline btn btn-outline">Sign up</span></a>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="nav__icon cart">
+                        <a class = "cart__link" href="#">
+                            <svg class="cart__svg" viewBox="0 0 21 25" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.17 5.277c-.006-.15-.13-.27-.28-.27h-4.65v-.2C15.24 2.158 13.083 0 10.43 0h-.275C7.507 0 5.35 2.157 5.35 4.808v.198H1.11c-.15 0-.274.12-.28.27L0 24.067c-.002.076.025.152.078.206.053.056.127.087.203.087h20.44c.076 0 .15-.03.202-.086.052-.054.08-.13.078-.206l-.83-18.79zm-14.258-.47c0-2.34 1.904-4.245 4.245-4.245h.275c2.34 0 4.246 1.905 4.246 4.246v.198H5.912v-.198zM.574 23.8L1.38 5.57h3.97v3.485h-.417c-.155 0-.28.126-.28.28 0 .156.125.28.28.28H6.33c.154 0 .28-.125.28-.28 0-.156-.126-.28-.28-.28h-.418V5.57h8.766v3.485h-.418c-.154 0-.28.126-.28.28 0 .156.126.28.28.28h1.397c.155 0 .28-.125.28-.28 0-.156-.125-.28-.28-.28h-.418V5.57h4.38l.807 18.23H.574z">
+                                </path>
+                            </svg>
+                            <span id="shopping_items" class="cart__number">0</span>
+                            <div class="cart__notification">
+                                Your cart is currently empty!
+                            </div>
+                        </a>
+                    </div>
+
+    
+                </div>
+
+            </nav>
+            <header class="header">
+
+                <div class="header__back"></div>
+                <div class="header__middle">
+                    <img src="img/display.png" alt="" class="header__display header__middle-1">
+                    <div class="header__textbox">
+                        <h1 class="heading-secondary header__middle-2">
+                            <span class="heading-primary header__middle-2">Pretty <span class="heading-tertiary">&amp;</span> feminine</span> <br/>
+                            <span class="header__middle-3">women's clothing</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="header__fore"></div>
+                <div class="header__decor header__middle-1"></div>
+                <div class="header__flower">
+                    <img src="img/flower.svg" alt="flying flower" class="header__flower-svg">
+                </div>
+            </header>
+
+            <section class="section-about">
+                
+                <h2 class="heading-secondary u-margin-top-medium">About us</h2> 
+                <p class="paragraph u-margin-top-small"> 
+                    Lavender Boutique offers a wide selection of women's clothing that is elegant, pretty, and feminine. Our trained stylists are always available and ready to help put together a look just for you. We'll make your day easier and prettier!
+                </p>
+                
+                <div class="scope u-margin-top-big">
+                    <div class="scope__label">
+                        <p class="heading-tertiary scope__text scope__text-1">Best-seller this month<p>
+                        <p class="scope__text scope__text-2">Exaggerate Layered Bell Sleeve Slit Hijab Evening Dress </p>
+                        <a class = "btn btn-full scope__btn u-margin-top-small" href = "#">I want this !</a>
+                    </div>
+                </div> 
+               
+            </section>
+
+
+            <section class="section-new">
+                <div>
+                    <h2 class="heading-secondary">New in</h2>
+                    <p class="paragraph"> 
+                        With new arrivals hitting the floor every week, each piece is guaranteed to be on trend, unique, and fresh!  
+                    </p>
+                </div>
+
+                <div class="grid u-margin-top-medium">
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/4-Mesh Yoke Ruffle Detail Dress.jpg" alt="Mesh Yoke Ruffle Detail Dress.jpg">
+                            <figcaption class="pricetag">Mesh Yoke Ruffle Detail Dress - <span class="price">$109</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/5-Flutter Sleeve Solid Ruffle Dress.jpg" alt="Flutter Sleeve Solid Ruffle Dress">
+                            <figcaption class="pricetag">Flutter Sleeve Solid Ruffle Dress - <span class="price">$99</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/6-Overlap Back Tie Detail Blouse.jpg" alt="Overlap Back Tie Detail Blouse">
+                            <figcaption class="pricetag">Overlap Back Tie Detail Blouse - <span class="price">$69</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/1-Soft Cotton Blouse.jpg" alt="Soft Cotton Blouse">
+                            <figcaption class="pricetag">Soft Cotton Blouse - <span class="price">$79</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/7-Symmetrical Flounce Shoulder Form Fitting Dress.jpg" alt="Symmetrical Flounce Shoulder Form Fitting Dress">
+                            <figcaption class="pricetag">Symmetrical Flounce Shoulder Form Fitting Dress - <span class="price">$109</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/8-Scalloped Cape Top.jpg" alt="Scalloped Cape Top">
+                            <figcaption class="pricetag">Scalloped Cape Top - <span class="price">$79</span></figcaption> 
+                        </figure>
+                        </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/9-Band Waist Maxi Skirt.jpg" alt="Band Waist Maxi Skirt">
+                            <figcaption class="pricetag">Band Waist Maxi Skirt - <span class="price">$79</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/2-Layered Petal Sleeve V-Neck Dress.jpg" alt="Layered Petal Sleeve V-Neck Dress">
+                            <figcaption class="pricetag">Layered Petal Sleeve V-Neck Dress - <span class="price">$99</span></figcaption> 
+                        </figure>
+                    </div>    
+                    </div>
+                    <div class="grid">
+                        <a class = "btn btn-outline u-margin-top-small" href = "#">Show me more</a>
+                    </div>
+                    
+                </div>   
+                <div class="decor-left">
+                    <img src="img/lavender-left.svg" alt="">
+                </div> 
+            </section>
+
+            
+           
+            <section class="section-best">
+                <h2 class="heading-secondary">Best-sellers</h2 grid-item>
+
+                <div class="grid u-margin-top-medium">
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/1-Soft Cotton Blouse.jpg" alt="Soft Cotton Blouse">
+                            <figcaption class="pricetag">Soft Cotton Blouse - <span class="price">$79</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/2-Layered Petal Sleeve V-Neck Dress.jpg" alt="Layered Petal Sleeve V-Neck Dress">
+                            <figcaption class="pricetag">Layered Petal Sleeve V-Neck Dress - <span class="price">$99</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/3-Exaggerate Layered Bell Sleeve Slit Evening Dress.jpg" alt="Exaggerate Layered Bell Sleeve Slit Evening Dress">
+                            <figcaption class="pricetag">Exaggerate Layered Bell Sleeve Slit Hijab Evening Dress - <span class="price">$119</span></figcaption> 
+                        </figure>
+                    </div>    
+                    <div class="col-1-of-4 grid-item">
+                        <figure class="grid-figure">
+                            <img src="img/collection/6-Overlap Back Tie Detail Blouse.jpg" alt="Overlap Back Tie Detail Blouse">
+                            <figcaption class="pricetag">Overlap Back Tie Detail Blouse - <span class="price">$69</span></figcaption> 
+                        </figure>
+                    </div>    
+                </div>
+                <a class = "btn btn-outline u-margin-top-small" href = "#">Show me more</a>
+                <div class="decor-right">
+                    <img src="img/lavender-right.svg" alt="">
+                </div> 
+            </section>
+            
+            <section class="section-collections">
+                <h2 class="heading-secondary">Collections</h2>
+               
+                <div class="grid u-margin-top-small">
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Spring</h3>
+                            <img src="img/collection/card1-spring.jpg" alt="Spring Collection">
+                            <p class="card__description">Fabulous looks hand-picked by our Creative Director</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Summer</h3>
+                            <img src="img/collection/card2-summer.jpg" alt="Summer Collection">
+                            <p class="card__description">All your summer favourites in one place</p>
+                        </div>       
+                    </div>    
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Fall</h3>
+                            <img src="img/collection/card3-fall.jpg" alt="Fall Collection">
+                            <p class="card__description">Fall fashion looks that will make you stand out.</p>
+                        </div>     
+                    </div>     
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <h3 class="card__title">Winter</h3>
+                            <img src="img/collection/card4-winter.jpg" alt="Winter Collection">
+                            <p class="card__description">Just in time for party season!</p>
+                        </div>  
+                    </div>   
+                    
+                </div>
+                <a class = "btn btn-outline u-margin-top-small" href = "#">Show me more</a>
+                
+                
+            </section>
+
+        
+
+        <footer class= "footer">
+            <div class="grid">
+                <div class="col-1-of-5 footer__help">
+                    <div class="heading-tiny">HELP</div>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Customer service</a></li>
+                        <li><a href="#">Shipping &amp; Return</a></li>
+                        <li><a href="#">Find a store</a></li>
+                    </ul>
+                </div>    
+                <div class="col-1-of-5 footer__social">
+                    <div class="heading-tiny">FIND US ON</div>
+                    <ul>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Pinterest</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-3-of-5 footer__signup">
+                    <p>
+                        Sign up for Fashion News
+                        Sign up now and get 25% off one item of choice + free standard shipping.
+                    </p>
+                    <a href="#" class="btn btn-full">Sign up</a>    
+                </div>
+            </div>
+            <a href ="#"><img src="img/logo-white.svg" alt="Lavender Boutique logo" class="footer__logo"></a>
+            <div class="footer__copyright">
+                <p>Illustration, Wed Design and Development by Kathy KhoaThy Pham.</p>
+                <p>Copyright &copy; 2018 by Kathy KhoaThy Pham. All rights reserved.</p>
+                <div class="footer__portfolio-link">
+                    <a href="../../portfolio.html" class="btn btn-full">Back to my portfolio</a>    
+                </div>
+            </div>
+        </footer>
+
+        
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    
+</html>

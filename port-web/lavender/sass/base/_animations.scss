@@ -1,0 +1,48 @@
+@keyframes drop {
+    0% {
+        transform: translate(0,-100%);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes flyX {
+    0% {
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(24vw,0);
+    }
+    30% {
+        transform: translate(22vw,0);
+    }
+    60% {
+        transform: translate(40vw,0);
+    }
+    100% {
+        transform: translate(80vw,0);
+
+    }
+}
+@keyframes flyY {
+    0% {
+        transform: translate(0,45vh);
+    }
+    10% {
+        transform: translate(0,40vh);
+    }
+    25% {
+        transform: translate(0,50vh);
+    }
+    35% {
+        transform: translate(0,60vh);
+    }
+    65% {
+        transform: translate(0,80vh);
+    }
+    100% {
+        transform: translate(0,100vh);
+
+    }
+}
