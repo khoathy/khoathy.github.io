@@ -206,7 +206,7 @@ body {
   text-transform: uppercase; }
 
 .card__description {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.4; }
 
 .u-center-text {
@@ -789,15 +789,15 @@ input[type=submit]:active {
   border-bottom: solid 1px #bbb7df; }
   .search__input::-webkit-input-placeholder {
     color: #948f9f;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 90%; }
   .search__input:-ms-input-placeholder {
     color: #948f9f;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 90%; }
   .search__input::placeholder {
     color: #948f9f;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 90%; }
   .search__input:focus {
     outline: none;
