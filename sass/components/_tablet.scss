@@ -80,17 +80,14 @@
                 position: relative;
                 &-content {
                     color: $color-white;
-                    margin-right: 5rem;
-                    font-size: 2.4rem;
-                    @include respond(tab-port){
-                        word-spacing: 0;
-                        font-size: 2.4rem;
-                    }
+                    margin-right: 4.5rem;
+                    font-size: 2.5rem;
+                    white-space: nowrap;
                 }
 
             }
             &__subheading {
-                margin-right: 4.5rem;
+                margin-right: 4rem;
                 padding : 1.2rem 0;
             }
 
@@ -102,10 +99,10 @@
                 margin: 0;
                 
                 border-bottom: solid 2px $color-blue;
-                width: 4.5rem;
+                width: 4rem;
                 text-align: center;
                 &-svg {
-                    width: 90%;
+                    width: 95%;
                     margin-bottom: -0.8rem;
                 }  
                 &-path {

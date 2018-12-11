@@ -46,3 +46,28 @@
 
     }
 }
+
+@keyframes flyX2 {
+    0% {
+        transform: translate(0,0);
+    }
+    30% {
+        transform: translate(32vw,0);
+    }
+    100% {
+        transform: translate(90vw,0);
+
+    }
+}
+@keyframes flyY2 {
+    0% {
+        transform: translate(0,60vh);
+    }
+    70% {
+        transform: translate(0,80vh);
+    }
+    100% {
+        transform: translate(0,100vh);
+
+    }
+}

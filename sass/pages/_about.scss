@@ -13,16 +13,16 @@
         }
     
     .tablet {
-        width: 33rem;
-        height: 47.3rem;
-        margin-top: 10rem;
+        height: 48rem;
+        min-width: 33rem;
+        margin-top: 8rem;
         transform: rotate(-2deg);
         @include respond(tab-port){
             display: none;
         }
         @include respond(big-desktop){
-            width: 36rem;
-            height: 51.6rem;
+            width: 35rem;
+            height: 51rem;
         } 
        
     }
@@ -31,12 +31,8 @@
         flex: 1;
         min-height: 60vh;
         background-color: rgba($color-white,0.9);
-        background-image: repeating-linear-gradient(
-                            to bottom,
-                            transparent,
-                            transparent 2.9rem,
-                            $color-blue-light 2.9rem,
-                            $color-blue-light 3rem);
+        background-image: url(../img/line.svg);
+        background-size: 2rem;
         color: $color-gray;
         border-radius: 5px;
         padding: 4.4rem;
@@ -47,6 +43,21 @@
         word-spacing: 0.2rem;
         position: relative;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+        // @supports (background-image: repeating-linear-gradient(
+        //     to bottom,
+        //     transparent,
+        //     transparent 2.9rem,
+        //     $color-blue-light 2.9rem,
+        //     $color-blue-light 3rem)) {
+        //     background-image: repeating-linear-gradient(
+        //                     to bottom,
+        //                     transparent,
+        //                     transparent 2.9rem,
+        //                     $color-blue-light 2.9rem,
+        //                     $color-blue-light 3rem);
+        // }
+
         
         @include respond(tab-land){
             margin-left: 7%;
@@ -106,6 +117,7 @@
             padding: 2rem 0;
             margin: 0 auto;
             width: fit-content;
+            white-space: nowrap;
         }
         &__link {
             display: flex;
@@ -149,8 +161,6 @@
             &-list{
                 padding-left: 2.5rem ;
             }
-
-
         }
     }
 }

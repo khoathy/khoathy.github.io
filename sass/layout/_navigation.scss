@@ -12,27 +12,36 @@
         @include respond(tab-port){
             visibility: hidden;
             opacity: 0;
+            position : fixed;
             top: 7.5rem;
             right: 3rem;
             background-color: $color-white;
             border-radius : 3px;
             padding : 3.5rem 2.5rem;
             box-shadow: 0px 2px 0.5rem rgba($color-black, 0.1);
-            transition: all 0.1s 0.1s ease-in;
+            transition: all 0.2s 0.1s ease-in;
         }
     }
     &__overlay {
         @include respond(tab-port){
             width : 4.5rem;
             height: 4.5rem;
-            position : absolute;
+            position : fixed;
             top: 2rem;
             right: 3rem;
             border-radius: 50%;
-            background: rgba($color-black, 0.2);
-            transition: all 0.3s cubic-bezier(0.87, 0, 0.08, 1);
+            background: radial-gradient(rgba($color-black, 0.1),rgba($color-blue-med-1, 0.3));
+            transition: all 0.4s cubic-bezier(0.87, 0, 0.08, 1);
+            @supports (-webkit-backdrop-filter: blur(0.2px)) or (backdrop-filter: blur(0.2px)) {
+                -webkit-backdrop-filter: blur(0.2px);
+                backdrop-filter: blur(0.2px);
+                background: rgba($color-gray, 0.1);
+            }
+
+
             &-scale {
                 transform: scale(87);
+                
             }
         }
 
@@ -70,7 +79,7 @@
             box-shadow: 0 -2.5rem 0 $color-white-2 inset;
             @include respond(tab-port){
                 box-shadow: none;
-                border-left : 3px solid $color-purple-light;
+                border-left : 3px solid $color-gray-blue;
             }
         }
         
@@ -103,7 +112,7 @@
         display: none;
         width : 4.5rem;
         height: 4.5rem;
-        position : absolute;
+        position : fixed;
         z-index: 15;
         top: 2rem;
         right: 3rem;

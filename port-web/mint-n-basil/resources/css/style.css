@@ -48,11 +48,11 @@ body {
 }
 
 
-section{
+section {
     padding: 8rem 0;
 }
 
-.box{
+.box {
     padding: 1%; 
 }
 
@@ -321,7 +321,7 @@ header {
 
 .section-meals{
     padding: 0;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
 }
 .meals-showcase {
     list-style: none;
@@ -695,47 +695,47 @@ img.mfp-img {height: 90vh;}
     animation: 1s blink step-end infinite;
   }
   
-  @keyframes "blink" {
-    from, to {
-      color: transparent;
+    @keyframes "blink" {
+        from, to {
+        color: transparent;
+        }
+        50% {
+        color: white;
+        }
     }
-    50% {
-      color: white;
+    
+    @-moz-keyframes blink {
+        from, to {
+        color: transparent;
+        }
+        50% {
+        color: white;
+        }
     }
-  }
-  
-  @-moz-keyframes blink {
-    from, to {
-      color: transparent;
+    
+    @-webkit-keyframes "blink" {
+        from, to {
+        color: transparent;
+        }
+        50% {
+        color: white;
+        }
     }
-    50% {
-      color: white;
+    
+    @-ms-keyframes "blink" {
+        from, to {
+        color: transparent;
+        }
+        50% {
+        color: white;
+        }
     }
-  }
-  
-  @-webkit-keyframes "blink" {
-    from, to {
-      color: transparent;
+    
+    @-o-keyframes "blink" {
+        from, to {
+        color: transparent;
+        }
+        50% {
+        color: white;
+        }
     }
-    50% {
-      color: white;
-    }
-  }
-  
-  @-ms-keyframes "blink" {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: white;
-    }
-  }
-  
-  @-o-keyframes "blink" {
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: white;
-    }
-  }
