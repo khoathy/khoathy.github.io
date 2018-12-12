@@ -643,31 +643,33 @@ h6 {
   .left {
     display: none; } }
 
-.enter-right {
-  animation: enter-right 0.5s cubic-bezier(0.16, 0.83, 0.56, 1.48) backwards; }
-  .enter-right:nth-of-type(2) {
-    animation-delay: 0.2s; }
-  .enter-right:nth-of-type(3) {
-    animation-delay: 0.4s; }
-  .enter-right:nth-of-type(4) {
-    animation-delay: 0.6s; }
-  .enter-right:nth-of-type(5) {
-    animation-delay: 0.8s; }
-  .enter-right:nth-of-type(6) {
-    animation-delay: 1s; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .enter-right {
+    animation: enter-right 0.5s cubic-bezier(0.16, 0.83, 0.56, 1.48) backwards; }
+    .enter-right:nth-of-type(2) {
+      animation-delay: 0.2s; }
+    .enter-right:nth-of-type(3) {
+      animation-delay: 0.4s; }
+    .enter-right:nth-of-type(4) {
+      animation-delay: 0.6s; }
+    .enter-right:nth-of-type(5) {
+      animation-delay: 0.8s; }
+    .enter-right:nth-of-type(6) {
+      animation-delay: 1s; } }
 
-.enter-left {
-  animation: enter-left 0.5s cubic-bezier(0.16, 0.83, 0.56, 1.48) backwards; }
-  .enter-left:nth-of-type(8) {
-    animation-delay: 0.3s; }
-  .enter-left:nth-of-type(9) {
-    animation-delay: 0.5s; }
-  .enter-left:nth-of-type(10) {
-    animation-delay: 0.7s; }
-  .enter-left:nth-of-type(11) {
-    animation-delay: 0.8s; }
-  .enter-left:nth-of-type(12) {
-    animation-delay: 1.1s; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .enter-left {
+    animation: enter-left 0.5s cubic-bezier(0.16, 0.83, 0.56, 1.48) backwards; }
+    .enter-left:nth-of-type(8) {
+      animation-delay: 0.3s; }
+    .enter-left:nth-of-type(9) {
+      animation-delay: 0.5s; }
+    .enter-left:nth-of-type(10) {
+      animation-delay: 0.7s; }
+    .enter-left:nth-of-type(11) {
+      animation-delay: 0.8s; }
+    .enter-left:nth-of-type(12) {
+      animation-delay: 1.1s; } }
 
 .footer__content {
   width: 100%;
