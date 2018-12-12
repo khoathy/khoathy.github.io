@@ -11,7 +11,7 @@
     font-weight: 400;
 
     @include respond(phone) {
-        padding: 8rem 3rem; 
+        padding: 6rem 3rem; 
     }
 
     &__help,

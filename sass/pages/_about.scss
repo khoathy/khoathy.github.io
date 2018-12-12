@@ -99,6 +99,8 @@
         &__heading {
             color: $color-purple;
             padding-bottom: 5rem;
+            margin-block-start: 0;
+            margin-block-end: 0;
             text-transform: uppercase;
             text-align: center;
             @include respond(tab-port){

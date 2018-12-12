@@ -1001,7 +1001,7 @@ input[type=submit]:active {
   font-weight: 400; }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      padding: 8rem 3rem; } }
+      padding: 6rem 3rem; } }
   .footer__help, .footer__social {
     padding: 1rem 4rem; }
     @media only screen and (max-width: 75em) {
