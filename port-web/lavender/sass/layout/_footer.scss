@@ -16,7 +16,16 @@
 
     &__help,
     &__social {
-        padding-right: 3rem;
+        padding: 1rem 4rem;
+        @include respond(tab-land){
+            padding: 1rem 2rem;
+        }
+        @include respond(tab-port){
+            padding: 1rem 1rem;
+        }
+        @include respond(phone){
+            padding: 1rem 0rem;
+        }
 
         ul {
             list-style: none;
@@ -32,6 +41,7 @@
     }
     &__signup {
         text-align: center;
+        padding-top: 1rem;
         .btn {
             margin: 1.5rem auto;
         }

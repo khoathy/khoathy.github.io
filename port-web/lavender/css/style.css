@@ -274,9 +274,6 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
-.u-margin-top-up {
-  margin-top: -5rem !important; }
-
 .u-margin-top-small {
   margin-top: 2rem !important; }
 
@@ -1006,7 +1003,16 @@ input[type=submit]:active {
     .footer {
       padding: 8rem 3rem; } }
   .footer__help, .footer__social {
-    padding-right: 3rem; }
+    padding: 1rem 4rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__help, .footer__social {
+        padding: 1rem 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__help, .footer__social {
+        padding: 1rem 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__help, .footer__social {
+        padding: 1rem 0rem; } }
     .footer__help ul, .footer__social ul {
       list-style: none; }
       .footer__help ul a, .footer__social ul a {
@@ -1016,7 +1022,8 @@ input[type=submit]:active {
         .footer__help ul a:hover, .footer__social ul a:hover {
           color: #592bff; }
   .footer__signup {
-    text-align: center; }
+    text-align: center;
+    padding-top: 1rem; }
     .footer__signup .btn {
       margin: 1.5rem auto; }
     .footer__signup p {
