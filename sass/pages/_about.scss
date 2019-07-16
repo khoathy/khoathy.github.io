@@ -72,6 +72,10 @@
         }
 
 
+        &__avatar{
+            width: 12rem;
+            margin: -1.7rem auto 0.15rem;
+        }
         &:before, 
         &:after {
             position: absolute;
@@ -98,9 +102,7 @@
 
         &__heading {
             color: $color-purple;
-            padding-bottom: 5rem;
-            margin-block-start: 0;
-            margin-block-end: 0;
+            padding-bottom: 3rem;
             text-transform: uppercase;
             text-align: center;
             @include respond(tab-port){
@@ -132,7 +134,7 @@
 
             &:not(:last-child){padding-bottom: 2.5rem;}
             & svg {
-                width: 4rem;
+                width: 3.5rem;
                 fill: $color-gray;
                 margin-right: 2rem;
                 @include respond(phone){
