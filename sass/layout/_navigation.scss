@@ -9,6 +9,11 @@
         left: 10rem;
         top: 1.5rem;
         opacity: 0.96;
+
+        @include respond(phone){
+            display: none;
+        }
+
     }
 
     &__list {

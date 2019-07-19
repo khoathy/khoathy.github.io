@@ -495,6 +495,9 @@ h6 {
     left: 10rem;
     top: 1.5rem;
     opacity: 0.96; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__avatar {
+        display: none; } }
   .nav__list {
     position: absolute;
     top: 2.5rem;
