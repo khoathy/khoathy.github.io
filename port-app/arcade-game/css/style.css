@@ -1,0 +1,274 @@
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #1b1c1c;
+    font-size: 1.6rem;
+}
+
+/* Styles for Typography*/
+h3 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #235ae4;
+}
+
+.info-number {
+    font-size: 1.8rem;
+    color: #235ae4;
+    margin : 0 0.5rem;
+}
+
+.paragraph {
+    margin-bottom: 1rem;
+}
+
+
+/* Styles for Info Panel */
+.info-panel {
+    background: #edf5fe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 2.5rem auto -1rem;
+    text-align: left;
+    width: 30rem;
+    height: 4.5rem;
+    padding: 0 3rem;
+    border-radius: 3rem;
+}
+
+.life {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.question-img {
+    width: 1.8rem;
+}
+
+.life-img {
+    width: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Styles for Modals */
+.modal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    min-width: 30rem;
+    border-radius: 1rem;
+    background: #f3fcff;
+}
+
+.modal-close {
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+    z-index: 2;
+    font-size: 3rem;
+    color: #235ae4;
+    -webkit-transition : ease-in 0.1s;
+    transition : ease-in 0.1s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #72aafc;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+
+/* Styles for Instruction Modal */
+#modal-instruction {
+    text-align: left;
+}
+
+.modal-content-instruction {
+    padding: 2rem 4rem;
+}
+
+.instruction-info {
+    list-style: inside square;
+    width: 50rem;
+    padding-left: 2rem;
+}
+
+.info-detail {
+    margin-left: 1rem;
+}
+
+.info-key {
+    display: inline-block;
+    min-width: 19rem;
+}
+
+
+/* Styles for Gameover Modal */
+.modal-content-gameover {
+    padding: 2rem 2rem 4rem 9rem;
+    -webkit-animation: bounceIn 0.6s cubic-bezier(0.21, 0.61, 0.35, 1);
+            animation: bounceIn 0.6s cubic-bezier(0.21, 0.61, 0.35, 1);
+}
+
+.gameover-img {
+    width: 12rem;
+    opacity: 0.2;
+    position: absolute;
+    left: 1rem;
+    bottom : 6rem;
+}
+
+.gameover-info {
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    margin: 2rem auto;
+    list-style: none;
+}
+
+.gameover-item {
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.info {
+    display: inline-block;
+    min-width: 11rem;
+}
+
+.info-summary {
+    color: #1f79ff;
+    font-size: 1.8rem;
+}
+
+
+/* Replay Button */
+.modal-replayBtn {
+    display: block;
+    margin : 1rem auto;
+    padding: 1rem 3rem;
+    min-width: 4rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #235ae4;
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+.modal-replayBtn:focus {
+    outline: none;
+}
+
+
+/* Animation */
+@-webkit-keyframes bounceIn {
+    0%, 10% {
+        opacity: 0;
+        -webkit-transform: scale3d(0, 0, 0);
+                transform: scale3d(0, 0, 0);
+    }
+    20% {
+        -webkit-transform: scale3d(.5, .5, .5);
+                transform: scale3d(.5, .5, .5);
+    }
+    30% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(.9, .9, .9);
+                transform: scale3d(.9, .9, .9);
+    }
+    70% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03);
+    }
+    90% {
+        -webkit-transform: scale3d(.97, .97, .97);
+                transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bounceIn {
+    0%, 10% {
+        opacity: 0;
+        -webkit-transform: scale3d(0, 0, 0);
+                transform: scale3d(0, 0, 0);
+    }
+    20% {
+        -webkit-transform: scale3d(.5, .5, .5);
+                transform: scale3d(.5, .5, .5);
+    }
+    30% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(.9, .9, .9);
+                transform: scale3d(.9, .9, .9);
+    }
+    70% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+                transform: scale3d(1.03, 1.03, 1.03);
+    }
+    90% {
+        -webkit-transform: scale3d(.97, .97, .97);
+                transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
