@@ -544,7 +544,7 @@ h6 {
           margin-right: 0; } }
   .nav__link {
     text-decoration: none;
-    color: #5467b6;
+    color: #223db4;
     font-size: 1.6rem;
     text-transform: uppercase;
     transition: box-shadow 0.2s ease-in-out;
@@ -565,7 +565,7 @@ h6 {
       font-weight: 400; }
       @media only screen and (max-width: 56.25em) {
         .nav__link--active {
-          color: #5467b6; } }
+          color: #223db4; } }
       .nav__link--active:hover {
         box-shadow: none;
         color: #edf2f7; }
@@ -573,7 +573,7 @@ h6 {
           .nav__link--active:hover {
             color: #6e84cb; } }
       .nav__link--active-dark {
-        color: #5467b6; }
+        color: #223db4; }
         .nav__link--active-dark:hover {
           color: #6e84cb;
           box-shadow: 0 -2.5rem 0 #fff inset; }
@@ -887,7 +887,7 @@ h6 {
     text-align: center;
     color: #676778; }
     .artwork__heading-drawing {
-      color: #5467b6; }
+      color: #223db4; }
   .artwork__intro, .artwork__gallery {
     margin: 0 auto;
     padding: 4rem 0;
@@ -1050,7 +1050,7 @@ h6 {
     .project__showcase-link {
       text-transform: none !important;
       margin: 1rem auto;
-      color: #5467b6; }
+      color: #223db4; }
   .project__img--md {
     max-width: 90rem; }
   .project__link {
