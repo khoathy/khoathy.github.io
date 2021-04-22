@@ -35,7 +35,7 @@
         background-size: 2rem;
         color: $color-gray;
         border-radius: 5px;
-        padding: 4.4rem;
+        padding: 1.4rem;
         margin-top: 12rem;
         margin-bottom: 6rem;
         margin-left: 10%;
@@ -73,9 +73,10 @@
 
 
         &__avatar{
-            width: 12rem;
-            margin: -1.7rem auto 0.15rem;
+            width: 10rem;
+            margin: 0.15rem auto;
         }
+        
         &:before, 
         &:after {
             position: absolute;
@@ -112,17 +113,20 @@
                 padding-bottom: 2.3rem;
             }
         }
+        
         &__content{
             padding: 0 2rem 3rem 2rem;
             line-height: 3rem;
             word-spacing: 0.2rem;
         }
+
         &__more {
             padding: 2rem 0;
             margin: 0 auto;
             width: fit-content;
             white-space: nowrap;
         }
+
         &__link {
             display: flex;
             align-items: center;
